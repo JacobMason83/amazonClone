@@ -26,6 +26,38 @@ const Home = () => {
           image='https://images-na.ssl-images-amazon.com/images/I/71RiQZ0J2SL._AC_SX679_.jpg'
         />
       </div>
+      <div className='home__row'>
+        <Product
+          id='3046'
+          title='INSIGNIA NS-55DF710NA21 55-inch Smart 4K UHD - Fire TV Edition, Released 2020'
+          price={429.99}
+          rating={5}
+          image='https://images-na.ssl-images-amazon.com/images/I/61%2BOhM4LEUL._AC_SX679_.jpg'
+        />
+        <Product
+          id='3049'
+          title='Microsoft Xbox One S 1TB All-Digital Edition Console with Xbox One Wireless Controller and 1 Month Xbox Live Gold Membership  White'
+          price={440.99}
+          rating={4}
+          image='https://images-na.ssl-images-amazon.com/images/I/71pDaLVdGgL._SX425_.jpg'
+        />
+        <Product
+          id='3050'
+          title='Nintendo Switch with Neon Blue and Neon Red Joy‑Con - HAC-001(-01)'
+          price={299.99}
+          rating={4}
+          image='https://images-na.ssl-images-amazon.com/images/I/61-PblYntsL._AC_SX679_.jpg'
+        />
+      </div>
+      <div className='home__row'>
+        <Product
+          id='3043'
+          title='Funko Pop! Animation: Naruto - Naruto Six Path Sage'
+          price={22.95}
+          rating={5}
+          image='https://images-na.ssl-images-amazon.com/images/I/61-TOi%2B8cuL._AC_SX679_.jpg'
+        />
+      </div>
     </div>
   )
 }

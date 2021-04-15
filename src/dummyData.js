@@ -43,7 +43,7 @@ rating={5}
 image='https://images-na.ssl-images-amazon.com/images/I/615y%2BIiStnL._AC_SX425_.jpg'
 
 id='3049'
-title='Microsoft Xbox One S 1TB All-Digital Edition Console with Xbox One Wireless Controller and 1 Month Xbox Live Gold Membership (Game Codes Not Included) - White'
+title='Microsoft Xbox One S 1TB All-Digital Edition Console with Xbox One Wireless Controller and 1 Month Xbox Live Gold Membership  White'
 price={440.99}
 rating={4}
 image='src="https://images-na.ssl-images-amazon.com/images/I/71pDaLVdGgL._SX425_.jpg"'
