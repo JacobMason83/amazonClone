@@ -18,7 +18,17 @@ export default function reducer(state, action)  {
            
         case 'REMOVE_FROM_BASKET':
             //logic here 
-            return { state }
+            let newBasket = [...state.basket]
+            // find the index 
+            const index = state.basket.findIndex((basketItem) => basketItem.id === action.id)
+            // if else statemetn
+            if(index >=0){
+                //item exists in basket , remove it 
+                newBasket.splice(index, 1)
+            }else {
+                console.warn(`cant remove product (id:${action.id} its not there)`)
+            }
+            return {...state, basket: newBasket }
             
         default: 
         return state;
