@@ -10,7 +10,7 @@ function CheckoutProduct({ id, title, image, price, rating}) {
         })
     }
     return (
-        <div className='checkoutProduct'>
+        <div className='checkoutProduct' key={id}>
             <img src={image} alt="img" /> 
             <div className="checkoutProduct__info">
                 <p className='checkoutProduct_title'>{title}</p>
@@ -21,7 +21,7 @@ function CheckoutProduct({ id, title, image, price, rating}) {
                     Array(rating)
                     .fill()
                     .map((_) => (
-                        <p>⭐</p>
+                        <p key={_}>⭐</p>
                     ))
                 }
             </div>

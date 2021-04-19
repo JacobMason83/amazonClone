@@ -14,7 +14,7 @@ const Home = () => {
         <Product
           id='3048'
           title='2021 Playstation Console and Playstation VR Bundle - PS5 Disk Version with Wireless Controller'
-          price={(1, 969.99)}
+          price={(1969.99)}
           rating={5}
           image='https://images-na.ssl-images-amazon.com/images/I/615y%2BIiStnL._AC_SX425_.jpg'
         />
