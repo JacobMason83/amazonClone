@@ -6,20 +6,24 @@ export const initalState = {
 }
 //get the subtotal for the basket 
 export const getBasketTotal =(basket) => {
-    basket?.reduce((amount, item) => item.price + amount, 0)
+    return basket?.reduce((amount, item) => item.price + amount, 0)
+    
 }
 // creating the reducer function 
 export default function reducer(state, action)  {
     console.log(action)
     switch(action.type) {
+        case 'SET_USER':
+            return {
+                ...state,
+                user: action.user
+            }
         case 'ADD_TO_BASKET':
             return {
                 // need to return the new data layer so that its different
                 ...state ,
                 basket: [...state.basket, action.item]
-
             }
-           
         case 'REMOVE_FROM_BASKET':
             //made a new basket 
             let newBasket = [...state.basket]

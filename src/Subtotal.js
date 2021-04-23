@@ -5,15 +5,14 @@ import {getBasketTotal} from './reducer'
 import './Subtotal.css'
 function Subtotal() {
     const [{basket}]= useStateValue()
-    console.log(basket)
-    console.log(getBasketTotal(basket))
+   
     return (
         <div className='subtotal'>
         <CurrencyFormat 
         renderText={(value) => (
             <Fragment>
             <p>
-                Subtotal ({basket.length} items): <strong>{`${value.value}`}</strong>
+                Subtotal ({basket.length} items): <strong>{`${value}`}</strong>
             </p>
             <small className="subtotal__gift">
                 <input type="checkbox" /> This order contains a gift
